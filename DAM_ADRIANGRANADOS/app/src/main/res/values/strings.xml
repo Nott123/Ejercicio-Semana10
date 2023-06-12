@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DAM_ADRIANGRANADOS</string>
+    <string name="Datos">datos</string>
+    <string name="DatosNA">Apellidos y Nombres</string>
+    <string name="correo">Correo Electronico</string>
+    <string name="clave">Clave</string>
+    <string name="fecha">Fecha de Nacimiento</string>
+    <string name="carrera">Carrera</string>
+    <string name="medio">¿Por que medio se entero de la convocatoria?</string>
+    <string name="send">Enviar</string>
+    <string name="borrar">Borrar Formulario</string>
+</resources>

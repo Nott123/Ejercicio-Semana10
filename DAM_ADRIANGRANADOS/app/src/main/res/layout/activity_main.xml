@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C507A"
+    android:backgroundTint="#144770"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="220dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="Examen de Admision"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/idtexto1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="Formulario de Registro"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="1913100054@untels.edu.pe"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/idtexto1"
+        app:layout_constraintTop_toBottomOf="@+id/idtexto1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="No compartido"
+        android:textColor="@color/white"
+        android:textSize="8sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/iddatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="@string/DatosNA"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="317dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:ems="10"
+        android:hint="Tu respuesta"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="@color/white"
+        android:textColorLink="#FFC107"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/iddatos"
+        app:layout_constraintTop_toBottomOf="@+id/iddatos" />
+
+    <TextView
+        android:id="@+id/idcorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="@string/correo"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextEmailAddress"
+        android:layout_width="317dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:ems="10"
+        android:hint="Tu respuesta"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="@color/white"
+        android:textColorLink="#FFC107"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/idcorreo"
+        app:layout_constraintTop_toBottomOf="@+id/idcorreo" />
+
+    <TextView
+        android:id="@+id/idclave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="@string/clave"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="321dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:ems="10"
+        android:hint="Tu respuesta"
+        android:inputType="textPassword"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="@color/white"
+        android:textColorLink="#FFC107"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/idclave"
+        app:layout_constraintTop_toBottomOf="@+id/idclave" />
+
+    <TextView
+        android:id="@+id/idfecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="@string/fecha"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="Fecha"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/idfecha"
+        app:layout_constraintTop_toBottomOf="@+id/idfecha" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="117dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="dd/mm/aaaa"
+        android:inputType="date"
+        android:textColor="@color/white"
+        android:textColorHighlight="#FFC107"
+        android:textColorHint="@color/white"
+        android:textColorLink="#FFC107"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/textView11"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+    <TextView
+        android:id="@+id/idcarrera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="@string/carrera"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@+id/editTextDate"
+        app:layout_constraintTop_toBottomOf="@+id/editTextDate" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="139dp"
+        android:layout_height="116dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/idcarrera"
+        app:layout_constraintTop_toBottomOf="@+id/idcarrera">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="#1C507A"
+            android:backgroundTint="#144770"
+            android:text="Ingenieria de sistemas"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="#1C507A"
+            android:backgroundTint="#144770"
+            android:text="Ingenieria Mecanica"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:background="#1C507A"
+            android:backgroundTint="#144770"
+            android:text="Ingenieria ambiental"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:background="#1C507A"
+            android:backgroundTint="#144770"
+            android:text="Administracion"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/idpregunta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="@string/medio"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="75dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="Radio"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/idpregunta"
+        app:layout_constraintTop_toBottomOf="@+id/idpregunta" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="77dp"
+        android:layout_height="34dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="Internet"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="80dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="124dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="Amigo"
+        android:textColor="#FFFFFF"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBox2"
+        app:layout_constraintTop_toTopOf="@+id/checkBox" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="82dp"
+        android:layout_height="34dp"
+        android:background="#1C507A"
+        android:backgroundTint="#144770"
+        android:text="Publicidad"
+        android:textColor="#F4EDED"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3" />
+
+    <Button
+        android:id="@+id/buttonsend"
+        android:layout_width="76dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#B39333"
+        android:text="@string/borrar"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2" />
+
+    <Button
+        android:id="@+id/buttonborrar"
+        android:layout_width="151dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="#B29233"
+        android:text="Borrar formulario"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.701"
+        app:layout_constraintStart_toEndOf="@+id/buttonsend"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_email_24" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintStart_toEndOf="@+id/idclave"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
+        app:srcCompat="@drawable/baseline_password_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="178dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonborrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/idpregunta"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
+        app:srcCompat="@drawable/baseline_supervisor_account_24" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/editTextDate"
+        app:layout_constraintTop_toTopOf="@+id/editTextDate"
+        app:srcCompat="@drawable/baseline_calendar_month_24" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/iddatos"
+        app:layout_constraintTop_toTopOf="@+id/iddatos"
+        app:srcCompat="@drawable/baseline_person_24" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintStart_toEndOf="@+id/idcorreo"
+        app:layout_constraintTop_toTopOf="@+id/idcorreo"
+        app:srcCompat="@drawable/baseline_email_24" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
